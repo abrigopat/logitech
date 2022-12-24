@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logitech</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon"
+        href="https://drive.google.com/uc?export=view&id=1bHqBaG38u-3hq38bkEWOR_tCIGODpPA8">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <!-- Animation from animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Montserrat:wght@600&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Montserrat:wght@600&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #188A86;
+            width: 100%;
+            overflow-x: hidden;
+        }
+
+        .navbar {
+            background-color: transparent;
+            width: 100vw;
+        }
+
+        .navbar .logi_logo {
+            width: 25%;
+            margin-left: 4vw;
+            background-color: transparent;
+        }
+
+        .highlights {
+            text-align: end;
+            margin-right: 4vw;
+        }
+
+        .highlights a {
+            text-decoration: none;
+            color: #FFF;
+        }
+
+        .highlights ul {
+            list-style: none;
+        }
+
+        #landingText #typingText {
+            margin-top: 10%;
+            margin-left: 10.5%;
+            position: absolute;
+            z-index: 3;
+            font-family: Montserrat;
+            letter-spacing: 3%;
+            font-size: 3vw;
+            font-weight: 500;
+            text-transform: uppercase;
+            color: #FFF;
+        }
+
+        #landingText #typingText span {
+            color: #E0C471;
+        }
+
+        #landingText #typingParagraph {
+            margin-top: 19%;
+            margin-left: 10.5%;
+            position: absolute;
+            z-index: 3;
+            font-family: Inter;
+            font-size: 1vw;
+            line-height: 2em;
+            color: #FFF;
+        }
+
+        #btnPanel #ctaBtn {
+            width: 13vw;
+            height: auto;
+            margin-top: 27%;
+            margin-left: 10.5%;
+            position: absolute;
+            z-index: 3;
+            border: none;
+            background-color: #746FBC;
+        }
+
+        #btnPanel #ctaBtn a {
+            text-decoration: none;
+            color: #FFF;
+            font-family: Montserrat;
+            font-size: 1em;
+            font-weight: 500;
+            letter-spacing: 3%;
+            padding: 1em;
+        }
+
+        #btnPanel #ctaBtn:hover {
+            background-color: #6D69A1;
+            transition: all 0.25s ease-in;
+        }
+
+        .filler{
+            margin-bottom: -.35em;
+            width: 100%;
+        }
+
+        .details1 {
+            width: 100vw;
+            background-color: #C1B0DF;
+        }
+
+        .details1 .content {
+            margin-top: 4%;
+            padding-left: 5%;
+            color: #FFF;
+        }
+
+        .details1 .content h2 {
+            font-family: Montserrat;
+            letter-spacing: 3%;
+            font-size: 2.25vw;
+            margin-top: 1.5em;
+            animation: bounce;
+            animation-duration: 2s;
+        }
+
+        .details1 .content p {
+            margin-top: 5%;
+            font-family: Inter;
+            font-size: 1.25vw;
+            line-height: 2em;
+        }
+
+        .details2 {
+            width: 100vw;
+            background-color: #E0C471;
+        }
+
+        .details2 .content {
+            margin-top: 3%;
+            padding-left: 5%;
+            color: #FFF;
+        }
+
+        .details2 .content ul {
+            margin-top: 2%;
+            font-size: 1.25vw;
+        }
+
+        .details2 .content h2 {
+            font-family: Montserrat;
+            letter-spacing: 3%;
+            font-size: 2.25vw;
+            margin-top: 1.5em;
+            animation: bounce;
+            animation-duration: 2s;
+        }
+
+        .details2 .content p,
+        .details2 .content h5 {
+            margin-top: 5%;
+            font-family: Inter;
+            font-size: 1.25vw;
+            line-height: 2em;
+        }
+
+        .details3 {
+            width: 100vw;
+            background-color: #746FBC;
+        }
+
+        .details3 .content {
+            margin-top: 4%;
+            padding-left: 5%;
+            color: #FFF;
+        }
+
+        .details3 .content h2 {
+            font-family: Montserrat;
+            letter-spacing: 3%;
+            font-size: 2.25vw;
+            margin-top: 1.5em;
+            animation: bounce;
+            animation-duration: 2s;
+        }
+
+        .details3 .content p {
+            margin-top: 5%;
+            font-family: Inter;
+            font-size: 1.25vw;
+            line-height: 2em;
+        }
+
+        .otherKeysTitle {
+            background-color: #FFF;
+        }
+
+        .otherKeysTitle h2 {
+            font-family: Montserrat;
+            letter-spacing: 3%;
+            font-size: 2.25vw;
+            text-align: center;
+            color: #C1B0DF;
+            height: 5em;
+            padding-top: 2.15em;
+        }
+
+        .gif {
+            width: 100vw;
+            height: 50%;
+        }
+
+        @media screen and (max-width: 1100px) {
+            #btnPanel #ctaBtn {
+                width: 14vw;
+                height: 5vh;
+                margin-top: 27%;
+                margin-left: 10.5%;
+                padding-top: 0;
+                position: absolute;
+                z-index: 3;
+                border: none;
+                background-color: #746FBC;
+            }
+
+            #btnPanel #ctaBtn a {
+                display: flex;
+                justify-content: center;
+                padding: .25em;
+                color: #FFF;
+                font-family: Montserrat;
+                font-size: .75em;
+                font-weight: 500;
+                letter-spacing: 3%;
+                padding: 1em;
+            }
+
+            #btnPanel #ctaBtn:hover {
+                background-color: #6D69A1;
+                transition: all 0.25s ease-in;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            #btnPanel #ctaBtn {
+                width: 14vw;
+                height: 3vh;
+                margin-top: 27%;
+                margin-left: 10.5%;
+                padding-top: 0;
+                position: absolute;
+                z-index: 3;
+                border: none;
+                background-color: #746FBC;
+            }
+
+            #btnPanel #ctaBtn a {
+                display: flex;
+                justify-content: center;
+                padding: .25em;
+                color: #FFF;
+                font-family: Montserrat;
+                font-size: .5em;
+                font-weight: 500;
+                letter-spacing: 3%;
+                padding: 1em;
+            }
+
+            #btnPanel #ctaBtn:hover {
+                background-color: #6D69A1;
+                transition: all 0.25s ease-in;
+            }
+        }
+
+        @media screen and (max-width: 576px) {
+            .navbar .logi_logo {
+                width: 18%;
+                margin-left: 3vw;
+            }
+
+            .details1 {
+                width: 100vw;
+                background-color: #C1B0DF;
+            }
+
+            .details1 .content {
+                margin-top: 2%;
+                padding-left: 0%;
+                text-align: center;
+            }
+
+            .details1 .content h2 {
+                font-family: Montserrat;
+                margin-top: 1em;
+            }
+
+            .details1 .content p {
+                margin-top: 1.5%;
+            }
+
+            .details2 .content {
+                margin-top: 2%;
+                padding-left: 0%;
+                text-align: center;
+            }
+
+            .details2 .content ul {
+                margin-top: 0%;
+                font-size: 1.25vw;
+                list-style: none;
+                text-align: left;
+                margin-left: -5%;
+            }
+
+            .details2 .content li {
+                text-align: center;
+            }
+
+            .details2 .content h2 {
+                font-family: Montserrat;
+                margin-top: 1em;
+            }
+
+            .details2 .content p,
+            .details2 .content h5 {
+                margin-top: 1%;
+            }
+
+            .details3 .content {
+                margin-top: 2%;
+                padding-left: 0%;
+                text-align: center;
+            }
+
+            .details3 .content h2 {
+                font-family: Montserrat;
+                margin-top: 1em;
+            }
+
+            .details3 .content p {
+                margin-top: 1.5%;
+            }
+
+            #otherKeys h2 {
+                margin-top: 10%;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            .navbar .logi_logo {
+                width: 15%;
+                margin-left: 3vw;
+                margin-top: -5vw;
+            }
+
+            #btnPanel #ctaBtn {
+                width: 14vw;
+                height: 3vh;
+                margin-top: 27%;
+                margin-left: 10.5%;
+                padding-top: 0;
+                position: absolute;
+                z-index: 3;
+                border: none;
+                background-color: #746FBC;
+            }
+
+            #btnPanel #ctaBtn a {
+                display: flex;
+                justify-content: center;
+                padding: .25em;
+                color: #FFF;
+                font-family: Montserrat;
+                font-size: .48em;
+                font-weight: 500;
+                letter-spacing: 3%;
+                padding: 1em;
+            }
+
+            #btnPanel #ctaBtn:hover {
+                background-color: #6D69A1;
+                transition: all 0.25s ease-in;
+            }
+        }
+
+        /*# sourceMappingURL=style.css.map */
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <div class="navbar fixed-top g-0 z-index-5">
+        <div>
+            <img src="https://drive.google.com/uc?export=view&id=1ZrH-kFmHBsp_2UXERPohjW1ncBSrEekt"
+                class="logi_logo img-fluid container-fluid">
+        </div>
+    </div>
+
+    <!-- <div class="highlights fixed-top g-0 z-index-7">
+        <ul>
+            <li><a href="#landing">eme</a></li>
+            <li><a href="#details">eme</a></li>
+            <li><a href="otherKeys">eme</a></li>
+        </ul>
+    </div> -->
+
+    <!-- FIRST SECTION -->
+    <div id="landing">
+
+        <div id="landingText">
+            <h1 id="typingText">Pop Keys <br> in <span class="typing"></span></h1>
+
+            <p id="typingParagraph">
+                A candy aesthetic with a dash of <br> fresh mojito.
+                Chill out with POP Keys in Daydream.
+            </p>
+        </div>
+
+        <div id="btnPanel">
+            <button type="button" class="btn btn btn-primary rounded-pill btn-block" id="ctaBtn">
+                <a href="#">
+                    Checkout
+                </a>
+            </button>
+        </div>
+
+        <img src="https://drive.google.com/uc?export=view&id=1W2t7-hqCeYXNiNkhbYIvf-D53Ueuy-4M" class="img-fluid">
+    </div>
+
+    <!-- FILLER 1 -->
+    <div class="filler">
+        <video class="img-fluid z-index-2" autoplay loop muted>
+            <source src="https://drive.google.com/uc?export=view&id=1DY6BZ3WzTbGDrCbKnf--ZSvW-7E8LiQW"
+                type="video/mp4"/>
+        </video>
+    </div>
+
+
+    <!-- POP KEYS DETAILS SECTION -->
+    <div class="details" id="details">
+
+        <!-- FIRST ROW -->
+        <div class="details1 row g-0">
+            <div class="content col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6 g-0" id="content">
+                <h2 class="wow bounce">
+                    Dimensions
+                </h2>
+
+                <p>
+                    Height: 5.45 in (138.47 mm) <br>
+                    Width: 12.65 in (321.2 mm) <br>
+                    Depth: 1.39 in (35.4 mm) <br>
+                    Weight (with batteries): 27.48 oz (779 g)
+                </p>
+            </div>
+
+            <div class="pic1 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6 g-0" id="pic1">
+                <div class="row">
+                    <img src="https://drive.google.com/uc?export=view&id=1O3MEkmN-Wy2Y_KT3x5UpGmayKEyuj_p9"
+                        class="gridpic img-fluid">
+                </div>
+            </div>
+        </div>
+
+        <!-- SECOND ROW -->
+        <div class="details2 row flex-column-reverse flex-sm-row g-0">
+            <div class="pic1 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6 g-0" id="pic1">
+                <div class="row">
+                    <img src="https://drive.google.com/uc?export=view&id=1ME5p3RujGalBljZ2hsukDy6i7uxFabKn"
+                        class="gridpic img-fluid">
+                </div>
+            </div>
+
+            <div class="content col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6 g-0" id="content">
+                <h2 class="wow bounce">
+                    Special Keys
+                </h2>
+
+                <h5>12 FN Shortcuts include:</h5>
+
+                <ul>
+                    <li>Media Keys</li>
+                    <li>Voice-To-Text</li>
+                    <li>Mic Mute</li>
+                    <li>Snip Screen</li>
+                </ul>
+
+                <p>
+                    Requires Logi Options+ Software available for Windows and MacOS <br>
+                    4 emoji shortcut keys (+4 extra emoji keys to swap), 1 emoji menu key <br>
+                    On/Off Switch with power saving technology
+                </p>
+            </div>
+        </div>
+
+        <!-- THIRD ROW -->
+        <div class="details3 row g-0">
+            <div class="content col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6 g-0">
+                <h2 class="wow bounce">
+                    Technical Specifications
+                </h2>
+
+                <p>
+                    Connection Type: Bluetooth Low Energy Wireless (Bluetooth 5.1) <br>
+                    Wireless range: 10 m (33ft) <br>
+                    Mechanical switches (Brown, tactile) <br>
+                    Software Support <br>
+                </p>
+            </div>
+            <div class="pic3 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6 g-0" id="pic1">
+                <div class="row">
+                    <img src="https://drive.google.com/uc?export=view&id=1n-vKYNyewKmzSQQJAWNy6FVR2qLHtYfP"
+                        class="gridpic img-fluid">
+                </div>
+            </div>
+        </div>
+
+        <!-- FILLER GIF 2 -->
+        <div class="filler">
+            <video class="img-fluid z-index-2" autoplay loop muted>
+                <source src="https://drive.google.com/uc?export=view&id=1F2mbVRAIDP9Rvr4uiizCQ6BAfGOvqUn-"
+                    type="video/mp4" />
+            </video>
+        </div>
+
+        <!-- GOAL -->
+        <div>
+            <img src="https://drive.google.com/uc?export=view&id=1tkqmqaHPVvPGiL5ttzDx3b9sX6aeEeed" class="img-fluid">
+        </div>
+
+        <!-- HEADING FOR OTHER POP KEYS -->
+        <div class="otherKeysTitle">
+            <h2 class="typingTitle"></h2>
+        </div>
+
+        <!-- OTHER POP KEYS -->
+        <div class="row g-0" id="otherKeys">
+            <div class="col-xl-6 col-lg-6 col-md-6 g-0">
+                <img class="img-fluid"
+                    src="https://drive.google.com/uc?export=view&id=1u1cd3ve9_vu5TpFRCNVl2nWmNSgwzEDn">
+            </div>
+
+            <div class="col-xl-6 col-lg-6 col-md-6 g-0">
+                <img class="img-fluid"
+                    src="https://drive.google.com/uc?export=view&id=1XIvjL8OeEVcYtATcO7gKR3EFiinklZRY">
+            </div>
+        </div>
+
+
+
+
+
+        <!-- Bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+            integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+            integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+            crossorigin="anonymous"></script>
+
+        <!-- typed.js -->
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script>
+            var typed = new Typed('.typing', {
+                strings: ['Daydream'
+                ],
+
+                typeSpeed: 60,
+                backSpeed: 60,
+                smartBackspace: true,// Default value
+                loop: true,
+                backDelay: 800
+            });
+        </script>
+
+        <script>
+            var typed = new Typed('.typingTitle', {
+                strings: ['Check out our other Pop Keys too!'
+                ],
+
+                typeSpeed: 60,
+                backSpeed: 60,
+                smartBackspace: true,// Default value
+                loop: true,
+                backDelay: 800
+            });
+        </script>
+
+        <!-- wow.js -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+        <script>
+            new WOW().init();
+        </script>
+</body>
+
+</html>
